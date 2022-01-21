@@ -45,7 +45,22 @@ export default function Profile() {
                                 ]}
                                 />
                             </h1>
+                            <span className='profile-role-tagline'>
+                                I'm a MERN Stack Developer with a passion for creating intuitive and interactive apps. 
+                            </span>
                         </span>
+                    </div>
+                    <div className='profile-options'>
+                        <a href="jennifer_resume.pdf" download="Jennifer_Liebelt.pdf">
+                            <button className='btn highlighted-btn'>
+                                Resume
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div className='profile-picture'>
+                    <div className='profile-picture-background'>
+
                     </div>
                 </div>
             </div>
