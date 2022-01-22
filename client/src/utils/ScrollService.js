@@ -12,7 +12,7 @@ export default class ScrollService {
     }
 
     scrollToContact = () => {
-        let contactMeScreen = document.getElementById("Contact Me")
+        let contactMeScreen = document.getElementById("ContactMe")
         if(!contactMeScreen) return;
         contactMeScreen.scrollIntoView({ behavior: "smooth"})
     }

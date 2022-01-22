@@ -1,5 +1,6 @@
 import React from 'react';
 import Typical from 'react-typical';
+import ScrollService from "../../../utils/ScrollService";
 import './Profile.css';
 
 export default function Profile() {
@@ -24,7 +25,7 @@ export default function Profile() {
                     <div className='profile-details-name'>
                         <span className='primary-text'>
                             {" "}
-                            Hi! I'm <span className='highlighted-text'>Jennifer</span>
+                            Hi! I'm <span className='highlighted-text'>Jennifer</span>!
                         </span>
                     </div>
                     <div className='profile-details-role'>
