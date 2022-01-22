@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import ScrollService from "../../utilities/ScrollService";
+import ScrollService from "../../utils/ScrollService";
 
 export default function Footer() {
   return (
