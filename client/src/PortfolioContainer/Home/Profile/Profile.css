@@ -5,7 +5,6 @@
     justify-content: center;
     height: 10%;
     min-height: fit-content;
-    background-image: url("../../assets/Home/bg.jpg");
 }
 
 .profile-parent {
@@ -67,7 +66,7 @@
 .profile-picture-background {
     height: 92%;
     width: 92%;
-    background-image: url("../../assets/Home/47DB43C7-1271-4561-B511-255B83466692_1_201_a.jpeg");
+    background-image: url("../../../assets/Home/47DB43C7-1271-4561-B511-255B83466692_1_201_a.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
