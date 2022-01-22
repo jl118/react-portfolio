@@ -9,6 +9,9 @@
   ## Description 
   
   This is a rough draft of a professional portfolio using React.
+
+  Upcoming Features: A working projects carousel that allows the user to actually click on the links 😑 
+  
   ## Table of Contents
   * [Usage](#usage)
   * [License](#license)
