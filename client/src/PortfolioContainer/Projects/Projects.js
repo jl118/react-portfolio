@@ -10,7 +10,7 @@ import './Projects.css';
 
 export default function Projects(props) {
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id)
+        if(screen.fadeInScreen !== props.id)
         return
         Animations.animations.fadeInScreen(props.id)
     }
@@ -46,7 +46,7 @@ export default function Projects(props) {
             title={'Projects'} 
             subHeading={'View My Work'}
             />
-            <section className='project-section' id={props.id || ""}>
+            <section className='project-section fade-in' id={props.id || ""}>
                 <div className='container'>
                     <div className='row'>
                         <OwlCarousel className='owl-carousel' id='project-carousel' {...options}>
