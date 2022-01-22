@@ -1,6 +1,5 @@
 import { TOTAL_SCREENS } from "./commonUtils";
 import {Subject} from 'rxjs';
-import { object } from "prop-types";
 
 export default class ScrollService {
     static scrollHandler = new ScrollService();
@@ -9,7 +8,7 @@ export default class ScrollService {
     static currentScreenFadeIn = new Subject();
 
     constructor() {
-        window.addEventListener('scroll', this.checkCurrentScreenUnderViewport);
+        window.addEventListener("scroll", this.checkCurrentScreenUnderViewport);
     }
 
     scrollToContact = () => {
