@@ -32,7 +32,7 @@ export default function Header() {
     };
 
     const getHeaderOptionsClass = (index) => {
-        let classes = "header-options";
+        let classes = "header-option";
         if(index < TOTAL_SCREENS.length -1)
         classes += "header-options-separator";
 
