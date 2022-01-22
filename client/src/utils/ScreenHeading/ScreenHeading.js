@@ -13,6 +13,14 @@ export default function ScreenHeading(props) {
                     </div>
                 ):<div></div>
             }
+
+            <div className='heading-separator'>
+                <div className='separator-line'>
+                    <div className='separator-blob'>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
