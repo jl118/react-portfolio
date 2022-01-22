@@ -54,7 +54,9 @@ export default function Profile() {
                         </span>
                     </div>
                     <div className='profile-options'>
-                        <button className='btn primary-btn'>
+                        <button className='btn primary-btn'
+                        onClick={() => ScrollService.scrollHandler.scrollToContact()}
+                        >
                             {""}
                             Contact Me{" "}
                         </button>
