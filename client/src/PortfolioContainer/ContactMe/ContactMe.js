@@ -5,10 +5,10 @@ import { toast } from "react-toastify";
 
 import imgBack from "../../../src/assets/images/mailz.jpeg";
 import load1 from "../../../src/assets/images/load2.gif";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
-import Footer from "../../PortfolioContainer/footer/Footer";
+import ScreenHeading from "../../utils/ScreenHeading/ScreenHeading";
+import ScrollService from "../../utils/ScrollService";
+import Animations from "../../utils/Animations";
+import Footer from "../../PortfolioContainer/Home/ProfileFooter/ProfileFooter";
 import "./ContactMe.css";
 
 export default function ContactMe(props) {
