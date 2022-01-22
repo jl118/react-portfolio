@@ -11,7 +11,7 @@ export default function AboutMe(props) {
         Animations.animations.fadeInScreen(props.id)
     }
 
-    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     const SCREEN_CONSTANTS = {
         description: "I’m a Full-Stack Web Developer with a Bachelor’s Degree in Communication from UNC Chapel Hill positioned to provide unique perspectives on how end users interact with websites and software platforms by leveraging my background in media technology and digital production.",
