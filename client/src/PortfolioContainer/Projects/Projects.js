@@ -6,6 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from '../../utils/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utils/ScrollService';
 import Animations from '../../utils/Animations';
+import './Projects.css';
 
 export default function Projects(props) {
     let fadeInScreenHandler = (screen) => {
@@ -16,6 +17,29 @@ export default function Projects(props) {
 
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+    const options = {
+        loop: true,
+        margin: 0,
+        nav: true,
+        animateIn: "bounceInRight",
+        animateOut: "bounceOutRight",
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        smartSpeed: 10000,
+        responsive: {
+            0:{
+                items:1,
+            },
+            768:{
+                items:1,
+            },
+            1000:{
+                items:3,
+            },
+        }
+    }
+
     return (
         <div>
             <ScreenHeading
@@ -25,14 +49,14 @@ export default function Projects(props) {
             <section className='project-section' id={props.id || ""}>
                 <div className='container'>
                     <div className='row'>
-                        <OwlCarousel className='owl-carousel' id='project-carousel'>
+                        <OwlCarousel className='owl-carousel' id='project-carousel' {...options}>
                             <div className='col-lg-12'>
                                 <div className='project-item'>
                                     <div className='project-description'>
                                         <p>
                                             My Recipe Planner
                                         </p>
-                                        <ul>
+                                        <ul className='technologies list-unstyled'>
                                             <li>
                                                 API, JavaScript, JQuery, HTML5 & CSS3
                                             </li>
@@ -43,8 +67,8 @@ export default function Projects(props) {
                                         src="img/recipe.png"
                                         alt='no internet connection'
                                         ></img>
-                                        <a href='https://philipbrowning.github.io/project1/' target='_blank'><h5>Deployed Application</h5></a>
-                                        <a href='https://github.com/PhilipBrowning/project1' target='_blank'><p>GitHub Repo</p></a>
+                                        <a href={'https://philipbrowning.github.io/project1/'} target='_blank'><h5>Deployed Application</h5></a>
+                                        <a href='https://github.com/PhilipBrowning/project1' target='_blank'><h6>GitHub Repo</h6></a>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +78,7 @@ export default function Projects(props) {
                                         <p>
                                             Flipped Pages
                                         </p>
-                                        <ul>
+                                        <ul className='technologies list-unstyled'>
                                             <li>
                                                 JavaScript, Express, MySQL, Node, HTML5, & CSS3
                                             </li>
@@ -66,7 +90,7 @@ export default function Projects(props) {
                                         alt='no internet connection'
                                         ></img>
                                         <a href='https://obscure-beach-36412.herokuapp.com/' target='_blank'><h5>Deployed Application</h5></a>
-                                        <a href='https://github.com/nealsmithg/flipped_pages' target='_blank'><p>GitHub Repo</p></a>
+                                        <a href='https://github.com/nealsmithg/flipped_pages' target='_blank'><h6>GitHub Repo</h6></a>
                                     </div>
                                 </div>
                             </div>
@@ -74,9 +98,9 @@ export default function Projects(props) {
                                 <div className='project-item'>
                                     <div className='project-description'>
                                         <p>
-                                            What the Forecast? Weather Dashboard
+                                            What the Forecast?
                                         </p>
-                                        <ul>
+                                        <ul className='technologies list-unstyled'>
                                             <li>
                                                 API, JavaScript, Moment.js, Bootstrap, HTML5 & CSS3
                                             </li>
@@ -88,7 +112,7 @@ export default function Projects(props) {
                                         alt='no internet connection'
                                         ></img>
                                         <a href='https://jl118.github.io/weather-dashboard/' target='_blank'><h5>Deployed Application</h5></a>
-                                        <a href='https://github.com/jl118/weather-dashboard' target='_blank'><p>GitHub Repo</p></a>
+                                        <a href='https://github.com/jl118/weather-dashboard' target='_blank'><h6>GitHub Repo</h6></a>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +122,7 @@ export default function Projects(props) {
                                         <p>
                                             Fitness Tracker
                                         </p>
-                                        <ul>
+                                        <ul className='technologies list-unstyled'>
                                             <li>
                                                 MongoDB, Express, JavaScript, HTML5 & CSS3
                                             </li>
@@ -110,7 +134,7 @@ export default function Projects(props) {
                                         alt='no internet connection'
                                         ></img>
                                         <a href='https://safe-ravine-28870.herokuapp.com/' target='_blank'><h5>Deployed Application</h5></a>
-                                        <a href='https://github.com/jl118/fitness-tracker' target='_blank'><p>GitHub Repo</p></a>
+                                        <a href='https://github.com/jl118/fitness-tracker' target='_blank'><h6>GitHub Repo</h6></a>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +144,7 @@ export default function Projects(props) {
                                         <p>
                                             Day Planner
                                         </p>
-                                        <ul>
+                                        <ul className='technologies list-unstyled'>
                                             <li>
                                                 JavaScript, Bootstrap, HTML5 & CSS3
                                             </li>
@@ -132,7 +156,7 @@ export default function Projects(props) {
                                         alt='no internet connection'
                                         ></img>
                                         <a href='https://jl118.github.io/day-planner/' target='_blank'><h5>Deployed Application</h5></a>
-                                        <a href='https://github.com/jl118/day-planner' target='_blank'><p>GitHub Repo</p></a>
+                                        <a href='https://github.com/jl118/day-planner' target='_blank'><h6>GitHub Repo</h6></a>
                                     </div>
                                 </div>
                             </div>
@@ -140,6 +164,9 @@ export default function Projects(props) {
                     </div>
                 </div>
             </section>
+            <div className='footer-image'>
+                <img src={require ('../../assets/Home/shape-bg.png')} alt='no internet connection' />
+            </div>
         </div>
     );
 }
