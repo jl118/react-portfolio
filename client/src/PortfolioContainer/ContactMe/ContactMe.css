@@ -12,11 +12,11 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background-color: #1f2235;
+    background-color: var(--green-extra-dark);
 }
 
 .central-form h2 {
-    color: #fff;
+    color: var(--lightestcool);
     font-family: "Poppins Bold";
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
@@ -88,11 +88,11 @@ textarea {
 }
 
 textarea:focus {
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    border: 2px solid var(--green-dark);
     background-color: #fff;
 }
 form input:focus {
-    border: 2px solid rgba(30, 85, 250, 0.47);
+    border: 2px solid var(--green-dark);
     background-color: #fff;
 }
 
@@ -101,11 +101,11 @@ form button {
     padding: 5px;
     outline: none;
     width: 900px;
-    color: rgb(230, 227, 227);
-    border: 2px solid #ff5823;
+    color: var(--lightestwarm);
+    border: 2px solid var(--dark-orange);
     font-size: 12px;
     border-radius: 19px;
-    background-color: #1f2235;
+    background-color: var(--green-extra-dark);
     font-size: 18px;
     width: 160px;
     align-items: center;
@@ -113,9 +113,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #1f2235;
+    background-color: var(--green-dark);
     transition: all ease 1s;
-    border: 2px solid #1f2235;
+    border: 2px solid var(--lightestcool);
 }
 
 button .load {
@@ -124,7 +124,7 @@ button .load {
 
 button .load img {
     width: 60px;
-    color: green;
+    color: var(--green);
 }
 
 .col i {

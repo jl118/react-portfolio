@@ -1,21 +1,25 @@
 :root{
-  --light-blue : #04C3FF;
-  --light-blue-shadow:  rgb(69 211 255 / 27%);
   --darkest-blue: #1f2235;
-  --sea-green: #0ABEAD;
-  --sea-green-dark: #0CBFAE;
-  --sea-green-extra-dark: #09BEAD;
-  --sea-green-shadow: rgba(11, 190, 173,0.4);
-  --header-hamburger-background : rgba(11, 190, 173,0.8);
-  --orange: #F57F17;
-  --dark-orange: #FF5823;
-  --orange-shadow: rgba(245, 127, 23,0.2);
+  --lightestcool: #E5F0ED;
+  --lightcool: #B9CBC5;
+  --green: #658074;
+  --green-dark: #2C3B2C;
+  --green-extra-dark: #0B1D0C;
+  --green-shadow: rgba(59, 110, 79, 0.4);
+  --header-hamburger-background : rgba(67, 112, 93, 0.76);
+  --lightestwarm: #F6EDDF;
+  --lightwarm: #FBD1A2;
+  --midlightwarm: #DF8F56;
+  --orange: #AF4608;
+  --dark-orange: #85320A;
+  --orange-shadow: rgba(184, 70, 17, 0.2);
+  --darkest-orange: #330F0A;
   --white: #ffffff;
   --black: #333333;
-  --disabled-btn: #09bead7a;
-  --error-message:  #e44f4fd1;
-  --toast-error: #e44f4ffa;
+  --disabled-btn: #658074;
+  --error-message:  #AF4608;
+  --toast-error: #AF4608;
   --toast-shadow:  #9c9c9ce3;
-  --toast-success: #0CBFAE;
-  --loader-color: #0CBFAE
+  --toast-success: #658074;
+  --loader-color: #658074
 }

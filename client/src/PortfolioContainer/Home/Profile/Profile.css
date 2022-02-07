@@ -10,7 +10,7 @@
 .profile-parent {
     display: flex;
     align-items: center;
-    color: aliceblue;
+    color: var(--lightestcool);
 }
 
 .profile-details-name {
@@ -48,7 +48,7 @@
 
 .profile-options .highlighted-btn:hover {
     margin: 0 0 0 28px;
-    background-color: cornsilk;
+    background-color: var(--lightestwarm);
     color: black;
 }
 

@@ -96,26 +96,21 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn {
   color: var(--white);
-  border: 2px solid linen;
+  border: 2px solid var(--lightestwarm);
   font-size: 12px;
   background-color: #1f2235;
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
 
 .primary-btn:hover {
-  color: aliceblue;
-  border: 2px solid #ff5823;
+  color: var(--lightestwarm);
+  border: 2px solid var(--orange);
   background-color: #1f2235;
 }
 
 .highlighted-btn {
-  color: var(--white);
+  color: var(--lightestwarm);
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: var(--orange);
 }
 
 @media only screen and (max-width: 568px) {
