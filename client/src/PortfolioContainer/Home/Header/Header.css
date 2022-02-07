@@ -42,7 +42,7 @@
 }
 
 .selected-header-option {
-    color: var(--dark-orange);
+    color: var(--midlightwarm);
 }
 
 @media screen and (max-width: 1110px) {

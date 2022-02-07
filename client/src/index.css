@@ -97,19 +97,19 @@ body ::-webkit-scrollbar-thumb {
 .primary-btn {
   color: var(--white);
   border: 2px solid var(--lightestwarm);
-  font-size: 12px;
-  background-color: #1f2235;
+  font-size: 14px;
+  background-color: var(--green-dark);
 }
 
 .primary-btn:hover {
   color: var(--lightestwarm);
   border: 2px solid var(--orange);
-  background-color: #1f2235;
+  background-color: var(--green-dark);
 }
 
 .highlighted-btn {
-  color: var(--lightestwarm);
-  font-size: 12px;
+  color: var(--white);
+  font-size: 14px;
   background-color: var(--orange);
 }
 

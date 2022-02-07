@@ -63,7 +63,7 @@ export default function Profile() {
                         </button>
                         <a href="jennifer_resume.pdf" download="Jennifer_Liebelt.pdf">
                             <button className='btn highlighted-btn'>
-                                Resume
+                                Resume 📥
                             </button>
                         </a>
                     </div>

@@ -66,9 +66,10 @@ export default function ContactMe(props) {
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Get In Touch"} title={"Contact Me"} />
+      <ScreenHeading title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
+          {" "}
           <h2 className="title">
             {" "}
             <Typical 
@@ -79,6 +80,7 @@ export default function ContactMe(props) {
             ]} 
             />
           </h2>
+          <div className="contact-icons">
             <a href='https://github.com/jl118' target="_blank">
                 <i className='fa fa-github'></i>
             </a>
@@ -88,10 +90,11 @@ export default function ContactMe(props) {
             <a href='https://www.linkedin.com/in/jennifer-liebelt/' target="_blank">
                 <i className='fa fa-linkedin'></i>
             </a>
+          </div>
         </div>
         <div className="back-form">
           <div className="img-back">
-            <h4>Send Your Email Here!</h4>
+            <h4>Lets Get in Touch!</h4>
             <img src={imgBack} alt="image not found" />
           </div>
           <form onSubmit={submitForm}>

@@ -14,7 +14,7 @@
 }
 
 .profile-details-name {
-    font-size: 24px;
+    font-size: 32px;
     font-family: "Poppins SemiBold";
 }
 
@@ -33,7 +33,7 @@
 }
 
 .highlighted-text {
-    color: var(--dark-orange);
+    color: var(--midlightwarm);
 }
 
 .profile-role-tagline {
@@ -80,8 +80,9 @@
 
 .colz .colz-icon i{
     color: white;
-    padding: 8px;
+    padding: 10px;
     padding-left: 0px;
+    font-size: 24px;
 }
 
 .colz .colz-icon i:hover {
@@ -94,7 +95,7 @@
     }
 
     .profile-details-name {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .profile-details-role .primary-text {
@@ -128,7 +129,7 @@
 
     .profile-options {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .profile-details {
