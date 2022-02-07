@@ -22,6 +22,11 @@
     margin-bottom: 20px;
 }
 
+.central-form a i {
+    width: 10px;
+    height: 10px;
+}
+
 .back-form {
     max-width: 380px;
     margin: 0 auto;
@@ -91,6 +96,7 @@ textarea:focus {
     border: 2px solid var(--green-dark);
     background-color: #fff;
 }
+
 form input:focus {
     border: 2px solid var(--green-dark);
     background-color: #fff;

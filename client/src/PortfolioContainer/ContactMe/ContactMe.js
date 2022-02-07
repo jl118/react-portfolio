@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import imgBack from "../../../src/assets/images/mailz.jpeg";
+import imgBack from "../../../src/assets/images/neon-email.jpg";
 import load1 from "../../../src/assets/images/load2.gif";
 import ScreenHeading from "../../utils/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utils/ScrollService";
@@ -70,8 +70,15 @@ export default function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 2000]} />
-          </h2>{" "}
+            {" "}
+            <Typical 
+            loop={Infinity} 
+            steps={[
+              "Send Me an Email 📨", 
+              2000,
+            ]} 
+            />
+          </h2>
             <a href='https://github.com/jl118' target="_blank">
                 <i className='fa fa-github'></i>
             </a>
